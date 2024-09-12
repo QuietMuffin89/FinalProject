@@ -1,0 +1,1820 @@
+/* 공통 css 파일 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+/*
+
+1. 어느 부분에서 사용된 클래스인지?
+2.
+.class {
+    속성
+}
+
+*/
+
+
+/* 공통 */
+
+.pagenationMobile {
+    width: 340px !important;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+th {
+    background: #e1ebfb !important;
+}
+
+table th,
+table td {
+    border-left: none;
+    border-right: none;
+    text-align: center;
+
+}
+
+.commonContainer {
+    padding-top: 80px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .commonContainer h1 {
+        margin-top: 20px !important;
+    }
+
+}
+
+.commonContainer h1 {
+    margin: 80px 0 80px 0;
+    text-align: center;
+}
+
+.commonContainer hr {
+    margin: 80px 0 80px 0;
+}
+
+.dropDownToggle {
+    /*background-color: #e1ebfb!important;*/
+    /*border-color: #e1ebfb!important;*/
+    /*font-weight: bold!important;*/
+}
+
+/* 404 */
+.container404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 68vh;
+    height: 100%;
+    text-align: center;
+}
+
+.notFoundMsg {
+    background: linear-gradient(90deg, rgba(52, 32, 70, 1) 23%, rgba(126, 210, 214, 1) 100%, rgba(52, 32, 70, 1) 23%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    font-size: 86px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px 50px 50px;
+
+}
+
+.notFoundTitle {
+    font-size: 30px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #000;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*파란배경 없애기*/
+
+.notFoundImg {
+    width: 50%;
+}
+
+/* 로그인 */
+.loginContainer {
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #fbfbfb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginTitle {
+    margin-bottom: 40px;
+}
+
+.loginInput {
+    width: 395px !important;
+    transition: 0.3s;
+    height: 50px !important;
+
+}
+
+.loginInput:focus {
+    width: 400px !important;
+    transition: 0.3s;
+}
+
+.loginInput:not(:focus) {
+    transition: 0.3s;
+}
+
+.loginBtn {
+    width: 100%;
+    margin-top: 30px !important;
+    max-width: 390px;
+    height: 50px !important;
+}
+
+.loginArea {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 페널티 */
+
+/* 요소 */
+.pagination {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.total {
+    display: none;
+}
+
+
+@media (max-width: 868px) {
+    .pageContainer {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pagination .noneActive {
+        display: none;
+
+    }
+
+    .total {
+        display: block;
+    }
+
+}
+
+/* 상세 */
+thead > tr > th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.penaltyImage {
+    width: 300px;
+    height: 300px;
+}
+
+.penaltyDoc {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    bottom: 10px;
+
+}
+
+.pageMove ul {
+    padding-left: 0px;
+}
+
+.pageMove ul li {
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 7px 0 7px 0;
+}
+
+.pageMove ul li span {
+    margin: 5px;
+}
+
+/* 만든이 페이지(팀원소개)*/
+.App {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 100px;
+    height: 100%;
+
+    padding: 50px;
+}
+
+/* 관리자 문의상세 페이지 */
+
+.answerNeed, .answerComplete {
+    padding: 5px 8px 5px 8px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.titleAnswerNeed, .titleAnswerComplete {
+    margin-left: 26px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.titleAnswerNeed {
+    border: 1px solid #ff5858;
+    background-color: #ed7e7e;
+
+}
+
+.titleAnswerComplete {
+    border: 1px solid #87cf64;
+    background-color: #4fd50a;
+}
+
+.answerNeed {
+    border: 1px solid #ff5858;
+    background-color: #ed7e7e;
+
+}
+
+.answerComplete {
+    border: 1px solid #87cf64;
+    background-color: #4fd50a;
+}
+
+.answerBtn {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+
+}
+
+@media (max-width: 900px) {
+    .answerText {
+        width: 100%;
+    }
+
+    .answerBtn {
+
+    }
+}
+
+.App-header {
+    margin-bottom: 32px;
+}
+
+.CreateH1 {
+    margin-bottom: 10px !important;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+.team-member {
+    width: 300px;
+    text-align: center;
+}
+
+.member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: transform 0.5s ease-in-out; /* 이미지 확대 애니메이션 추가 */
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-title {
+    color: #888;
+    font-weight: bold;
+}
+
+.hover-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.team-member:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-member:hover .member-image {
+    transform: scale(1.2); /* 이미지 확대 비율 설정 */
+}
+
+
+@media (max-width: 768px) {
+    .App {
+        padding: 30px 0 30px 0;
+    }
+
+    .App-header {
+        padding: 26px 15px 26px 15px;
+
+    }
+
+    .hover-text {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .team-member {
+        margin: 0 0 80px 0;
+    }
+}
+
+/* 문의 상세페이지 모바일 */
+.inquiryDetailH1Mobile {
+    margin: 50px 50px !important;
+}
+
+span {
+    font-size: 14px;
+}
+
+
+/* 프로젝트 소개 페이지 */
+.projectInfo {
+    /* margin: 0 400px 0 400px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.infoStart {
+    background-color: #323232;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.infoStart2 {
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    flex-direction : column;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.infoStart2Area {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    max-width: 1000px;
+    padding: 15% 0 15% 0;
+}
+
+.jetbotArea {
+    color: rgb(34, 34, 34);
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    padding: 15% 0 15% 0;
+}
+
+.reactArea {
+    color: rgb(57, 218, 249);
+    padding: 0 50px 0 50px;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 884px;
+    text-align: center;
+    padding: 15% 0 15% 0;
+}
+
+.springArea {
+    color: rgb(95, 179, 75);
+    padding: 0;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    padding: 15% 0 15% 0;
+}
+
+.IDEArea {
+    background: linear-gradient(90deg, rgba(117, 0, 255, 1) 29%, rgba(255, 0, 0, 1) 52%, rgba(0, 14, 255, 1) 69%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction : row;
+    padding: 15% 0 15% 0;
+}
+
+.wheel {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 768px) {
+    .projectTitle {
+        font-size: 5vw;
+        padding-top: 12vh;
+    }
+
+    .projectInfo {
+        background-size: 40vw;
+    }
+
+    .metal_image.animate {
+        transform: translateX(50vw);
+    }
+
+    .p-info.animate {
+        transform: translate(calc(-10vw), calc(-20vh));
+        font-size: 3vw;
+    }
+
+    .img2.animate {
+        transform: translateX(-60vw);
+    }
+
+    .p-info2.animate {
+        transform: translate(calc(10vw), calc(20vh));
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectTitle {
+        font-size: 6vw;
+        padding-top: 15vh;
+    }
+
+    .projectInfo {
+        background-size: 50vw;
+    }
+
+    .metal_image.animate {
+        transform: translateX(30vw);
+    }
+
+    .p-info.animate {
+        transform: translate(calc(-10vw), calc(-20vh));
+        font-size: 8vw;
+    }
+
+    .img2.animate {
+        transform: translateX(-70vw);
+    }
+
+    .p-info2.animate {
+        transform: translate(calc(15vw), calc(15vh));
+        font-size: 8vw;
+    }
+}
+
+/* 프로젝트 소개 페이지 모바일 */
+.projectInfoMobile {
+    margin: 0 10px 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* 메인 페이지 */
+.mainGroup {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 62px;
+    color: #515151;
+}
+
+.mainImg {
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+}
+
+
+.mainItem {
+    margin: 20px 30px 30px 30px;
+    background-color: white;
+}
+
+.mainItem p {
+    font-size: 70px;
+}
+
+.groupChild1 {
+    font-size: 28px;
+    padding: 100px 120px 100px 120px;
+    border: 1px solid #ff5900;
+    border-radius: 8px;
+    color: rgb(255, 174, 97);
+}
+
+.groupChild1:hover {
+    padding: 120px 140px 120px 140px;
+    background-color: rgb(255, 174, 97);
+    transition: 0.4s;
+    color: white;
+}
+
+.groupChild1:not(:hover) {
+    transition: .5s;
+}
+
+.groupChild2 {
+    font-size: 28px;
+    padding: 100px 120px 100px 120px;
+    border: 1px solid #0017ff;
+    border-radius: 8px;
+}
+
+.groupChild2:hover {
+    padding: 120px 140px 120px 140px;
+    background-color: rgb(111, 175, 248);
+    transition: 0.4s;
+    color: white;
+}
+
+.groupChild2:not(:hover) {
+    transition: .5s;
+}
+
+.descriptionArea {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionSpace {
+    width: 80px;
+}
+
+.userDescription {
+    max-width: 390px;
+}
+
+.adminDescription {
+    max-width: 390px;
+}
+
+@media (max-width: 868px) {
+    .welcome {
+        font-size: 28px;
+        color: #515151;
+        margin-bottom: 25px;
+    }
+
+    .welcome img {
+        display: none;
+    }
+
+    .mainGroup {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainItem {
+        margin: 60px;
+    }
+
+    .descriptionSpace {
+        display: none;
+    }
+
+    .userDescription, .adminDescription {
+        display: none;
+    }
+
+    .groupChild1 {
+        font-size: 20px;
+        padding: 20px 30px 20px 30px;
+        border: 1px solid #ff5900;
+        border-radius: 8px;
+        color: rgb(255, 174, 97);
+    }
+
+    .groupChild2 {
+        font-size: 20px;
+        padding: 20px 30px 20px 30px;
+        border: 1px solid #0017ff;
+        border-radius: 8px;
+    }
+
+
+}
+
+/* 사용자 메인페이지 */
+.mainBackground :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(30px); /* 블러 처리 */
+    z-index: -999; /* 배경 이미지가 콘텐츠 뒤에 위치하도록 설정 */
+    transform: scale(1.1);
+}
+
+.mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    color: #f9f9f9;
+    z-index: 1; /* 콘텐츠가 배경 이미지 위에 오도록 설정 */
+    flex-grow: 1; /* 콘텐츠가 남은 공간을 채우도록 설정 */
+    /* 추가적인 콘텐츠 스타일을 여기에 추가 */
+}
+
+.youtubeMain {
+    position: relative;
+    left: 600px;
+}
+
+
+.mainPageContent {
+    height: 100vh;
+    background-color: #f9f9f9;
+    color: black;
+    z-index: 1;
+}
+
+.carousel {
+    bottom: 50px;
+}
+
+.userMainTitle {
+    color: white;
+    text-align: center;
+}
+
+.userMainH3 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.userMainText {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/* 사용자 메인페이지 모바일 */
+.youtubeMainMobile {
+    margin: 5px;
+}
+
+/* 관리자 메인페이지 */
+.graph {
+    width: 500px;
+    border: 1px solid black;
+}
+
+.adminMainText {
+    text-align: center;
+}
+
+.adminMainText1 {
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.none {
+
+
+}
+
+.adminContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* 날씨별 배경 이미지 */
+
+.clear-sky {
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/16/19/14/day-1674886_1280.png') !important;
+}
+
+.few-clouds {
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_1280.png') !important;
+}
+
+.scattered-clouds {
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_1280.png') !important;
+}
+
+.broken-clouds {
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_1280.png') !important;
+}
+
+.shower-rain {
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/01/07/11/rain-5115710_1280.png') !important;
+}
+
+.rain {
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/01/07/11/rain-5115710_1280.png') !important;
+}
+
+.thunderstorm {
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/01/07/11/rain-5115710_1280.png') !important;
+}
+
+.snow {
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/01/10/54/christmas-1300089_1280.png') !important;
+}
+
+.mist {
+    background-image: url('https://cdn.pixabay.com/photo/2023/02/07/13/55/forest-7774205_1280.jpg') !important;
+}
+
+.adminHeader {
+    /*display: flex;*/
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.secondF {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.adminWelcome {
+    text-align: center;
+    flex: 1;
+    background-color: #fbfbfb;
+    color: #000000;
+    padding: 20px;
+}
+
+.weather {
+    flex: 1;
+    background-color: rgba(3, 42, 104, 0.83);
+    color: #f9f9f9;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+}
+.boardArea{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.adminContent {
+    width: 100%;
+    margin-top: 30px;
+    padding: 45px;
+    border:1px solid #b1b1b1;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+}
+
+
+.chartButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.dataGraph {
+    background-color: #ffffff;
+}
+
+.dataGraph canvas {
+    width: 600px !important;
+    height: 300px !important;
+}
+
+@media (max-width: 768px) {
+    .dataGraph canvas {
+
+        max-width: 300px;
+        max-height: 150px;
+
+    }
+
+}
+
+/* 관리자 메인페이지 모바일 */
+.dataGraphMobile {
+    max-width: 260px !important;
+}
+
+.adminWelcomeMobile {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    border: 1px #4fd50a solid;
+    width: 150px !important;
+    font-size: 15px;
+}
+
+.weatherMobile {
+    flex: 1;
+    color: black;
+    padding: 5px;
+    height: 300px;
+}
+
+.adminHeaderMobile {
+    /*display: flex!important;*/
+    /*flex-direction: column!important;*/
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* pagination */
+#BasicPagination {
+
+}
+
+.paginationGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.paginationGroup span {
+    color: #000000;
+    margin: 1.5px;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paginationGroup span:hover {
+    color: #f4f4f4;
+    background-color: #454545;
+}
+
+
+/* 유저 문의(모달) */
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.modalOpenButton {
+
+    margin-top: auto;
+}
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225, 225, 225, 0.5);
+    z-index: 9999;
+}
+
+.modalCloseBtn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    scale: 2;
+    cursor: pointer;
+}
+
+.inquiryButton {
+    width: 100%;
+    height: 3rem;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #000080, #000080);
+}
+
+.card1, .card2 {
+    background-image: linear-gradient(to right bottom, #ffffff, #f8f6ff, #f2edff, #ede4fe, #e8dafd);
+    position: fixed;
+    width: 400px !important;
+    height: 500px !important;
+    margin: auto;
+    border-radius: 20px !important;
+    font-family: "Jua", sans-serif;
+
+
+    .cardBody {
+        margin: auto;
+        bottom: 100px !important;
+    }
+
+    .cardImages {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+    }
+
+}
+
+.cards {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+
+/* 문의하기 폼 */
+.inquiryForm {
+    position: absolute;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.inquiryIndex {
+    margin: 0;
+    padding: 0;
+}
+
+.formLabel {
+    font-size: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    padding: 1.5rem 0 0 0;
+    justify-content: center;
+}
+
+.formControl {
+    resize: none;
+}
+
+.outBox {
+    margin: 50px auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.outBox .inputBox {
+    position: relative;
+    height: 50px;
+}
+
+.outBox .inputBox input[type='text'] {
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.outBox .inputBox label {
+    pointer-events: none;
+    transition: all .2s;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    padding: 0 6px;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    background: #ffff;
+    transform: translate(10px, -18px);
+}
+
+.outBox .inputBox input[type='text']:focus + label,
+.outBox .inputBox input[type='text'].not-empty + label {
+    transform: scale(0.85) translate(-8px, -46px);
+}
+
+.inquiryNew .headline {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.inquiryNew .inquiryNewIcon {
+    scale: 4;
+    padding-top: 1.5rem;
+    cursor: pointer;
+    color: #000080;
+}
+
+.inquiryNew {
+    margin-bottom: 200px;
+}
+
+.inquiryNewList, .inquiryNew {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*height: 500px;*/
+}
+
+.inquiryNewList ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inquiryNewList ul li hr {
+    width: 87rem;
+}
+
+.inquiryTitle {
+    font-size: 30px;
+}
+
+.inquiryIcon {
+    position: absolute;
+    left: 92%;
+    bottom: 44%;
+    cursor: pointer;
+}
+
+/* 유저 공지사항 페이지*/
+
+.noticeContainer {
+    padding-top: 130px;
+    text-align: center;
+    padding-bottom: 100px;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.noticePagination {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: -40px;
+}
+
+.userNoticeContainer {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 990px) {
+    .userNoticeInput {
+        display: flex;
+        float: right;
+        width: 300px;
+    }
+}
+
+.userNoticeSearch {
+    background-color: white !important;
+    width: 50px !important;
+    border-color: #e1ebfb !important;
+}
+
+.userNoticeSearchIcon {
+    color: #000000;
+
+}
+
+.userNoticeTableHead {
+    /*background-color: bisque!important;*/
+}
+
+
+/* 유저 공지사항 상세페이지*/
+.userNoticeTitle {
+    text-align: left !important;
+    font-size: 60px;
+    margin: 0 !important;
+}
+
+.userNoticeDate {
+    padding: 10px !important;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.userNoticeText {
+    height: 500px !important;
+}
+
+.userNoticeDateDiv p {
+    padding: 0;
+}
+
+.userNoticeText {
+    height: 400px !important;
+    text-align: start;
+}
+
+.noticeListBtn {
+    height: 40px;
+    width: 100px;
+    padding-bottom: 20px;
+
+}
+
+.noticeDetailBtn {
+    margin-top: auto;
+}
+
+.detailContainer {
+    height: 400px;
+    margin-left: 0;
+    /*    padding-bottom: 20px;*/
+}
+
+.detailContainer a {
+    color: black !important;
+}
+
+.text-center p {
+    text-align: left !important;
+}
+
+/* 유저 공지사항 모바일 */
+
+.userNoticeMH1 {
+    padding: 10px;
+    color: black;
+    font-weight: bold !important;
+}
+
+.userNoticeTableMobile {
+    width: 100% !important;
+}
+
+.userNoticeDate {
+    float: right;
+    font-size: 12px;
+    margin: 0;
+}
+
+.userNoticeTitle {
+    margin: 5px 0 !important;
+    text-align: left !important;
+    font-size: 30px;
+    border-top: 1px solid;
+    padding: 37px 27px 30px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px 0 !important;
+}
+
+.noticeMobileContainer {
+    padding: 0 !important;
+}
+
+.userNoticeTh {
+    background-color: white !important;
+}
+
+.noticeDate {
+    font-size: 15px;
+    width: 120px;
+}
+
+
+/* 관제 페이지 */
+.backGround {
+    background-image: url("./images/img.png");
+    background-size: cover;
+}
+
+.controlH1 {
+    /*background-image: url("./images/img.png") !important;*/
+    background: linear-gradient(90deg, rgb(2, 41, 115) 23%, rgba(255, 242, 0, 1) 100%);
+    background-size: cover;
+    margin: 0 0 10px 0 !important;
+    padding: 10px 0 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.controlInfo {
+    display: flex;
+    margin: 20px;
+    padding: 43px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.controlInfo .gauge {
+    margin-top: 240px;
+    color: #fd2626;
+}
+
+.gauge button {
+    min-width: 10% !important;
+}
+
+.controlBtnGroup {
+    margin-left: 480px;
+    margin-top: 255px;
+}
+
+.controlBtnGroup button {
+    min-width: 45px !important;
+    max-width: 45px !important;
+    margin: 2px;
+
+}
+
+.controlVideo {
+    min-width: 640px;
+    min-height: 480px;
+    border: 1px solid black;
+    margin: 0 50px 0 50px;
+    color: #98ff00;
+}
+
+.penaltyList {
+    /*min-width: 290px;*/
+    text-align: center;
+}
+
+.penaltyList h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.penaltyUl {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    padding: 15px 22px 15px 15px;
+    border: 1px solid #393939;
+    overflow-x: scroll;
+}
+
+.penaltyLi {
+    border: 1px solid #636363;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.penaltyLi input {
+    margin: 5px;
+}
+
+.carNumberImg {
+    margin: 5px;
+    width: 220px;
+    height: 80px;
+
+}
+
+.carNumberImg:hover {
+
+}
+
+.carNumber {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #656565;
+    margin: 10px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+.activeButton {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding-right: 320px;
+}
+
+.controlModal {
+    position: absolute;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.createPatrolModal {
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+/* 순찰내역 페이지 */
+.adminPatrolTitle {
+    margin: 5px 0 !important;
+    text-align: left !important;
+    font-size: 30px;
+    border-top: 1px solid;
+    padding: 37px 27px 30px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.adminPatrolDate, .adminPenaltyDate {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bolder;
+    color: #333;
+    text-align: end;
+    padding-right: 5px;
+}
+
+.adminPatrolText {
+    height: 400px !important;
+}
+
+
+.trTitle {
+    background-color: #c2e1fd;
+}
+
+.patrolH1 {
+    /*background-image: url("./images/street.jpg");*/
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.4) 23%, rgba(0, 82, 255, 0.56) 100%, rgb(0, 0, 0) 23%);
+    background-size: cover;
+    color: white;
+    margin-top: 50px;
+    padding: 50px;
+    /*margin: 100px 0 100px 0 ;*/
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.createButton {
+
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.dropDown {
+    background-color: rgb(176, 217, 255) !important;
+    border: #d3f0ff !important;
+}
+
+.crButton {
+    border-color: #e1ebfb !important;
+    background-color: #e1ebfb !important;
+    font-weight: bold !important;
+}
+
+/* 순찰내역 모바일 */
+
+.patrolMobileCont {
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.crButton {
+    margin: 5px !important;
+}
+
+.patrolMH1 {
+    padding: 30px;
+    margin: 10px 10px !important;
+    width: 95% !important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pmtd1 {
+    width: 30% !important;
+
+}
+
+.pmtd2 {
+    width: 30% !important;
+}
+
+.pmtd3 {
+    width: 40% !important;
+}
+
+.rowTitle {
+    background-color: white !important;
+}
+
+/* 순찰내역작성 페이지 */
+.createPatrolContainer {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    max-height: 200px !important;
+    z-index: 9999;
+}
+
+/* 단속차량 목록 페이지 */
+
+.searchButton {
+    border-color: #e1ebfb !important;
+    background-color: white !important;
+}
+
+.adminPenaltySearchIcon {
+    color: black;
+}
+
+.penaltyH1 {
+    /*background-image: url("./images/background-75.jpg") !important;*/
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 23%, rgba(151, 151, 151, 0.56) 100%);
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.adminPenaltyCash {
+    font-size: 20px;
+    text-align: end;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-bottom: 7px;
+}
+
+.cardText {
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+.imageTable {
+
+    height: 400px !important;
+}
+
+.controlGraph {
+
+}
+
+.controlGraph canvas {
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .penaltyH1 {
+        /*background-image: url("./images/background-75.jpg") !important;*/
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .penaltyH11 {
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 !important;
+        margin: 50px 0 !important;
+    }
+
+    .penaltyCont {
+        align-items: center !important;
+    }
+
+    .d-flex {
+
+    }
+
+    .penaltyTh {
+        background-color: white !important;
+    }
+
+    .penaltyNum {
+        width: 40%;
+    }
+
+    .penaltyCash {
+        width: 20%;
+    }
+
+    .penaltyDate {
+        width: 40%;
+    }
+}
+
+/* 단속차량 상세페이지 모바일 */
+.imageTableMobile {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* 관리자 공지사항 페이지 */
+.table th, .table td {
+    padding: 8px;
+}
+
+.adminNoticeSearchIcon {
+    color: black !important;
+}
+
+.adminNoticeH1 {
+    /*background-image: url("./images/blue-background.jpg");*/
+    background-size: cover;
+    background: linear-gradient(90deg, rgba(0, 86, 255, 0.4) 23%, rgba(0, 166, 255, 0.56) 100%, rgba(0, 38, 182, 0.59) 23%);
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.title-column {
+    background: #e1ebfb !important
+}
+
+.adminNoticeHead th {
+    background: #e1ebfb !important
+}
+
+.table th.title-column, .table td.title-column {
+    width: 50%; /* 예: 제목 열의 넓이를 50%로 설정 */
+}
+
+.table th.date-column, .table td.date-column {
+    width: 20%; /* 예: 게시일 열의 넓이를 20%로 설정 */
+}
+
+.table th.view-column, .table td.view-column {
+    width: 20%; /* 예: 조회수 열의 넓이를 20%로 설정 */
+}
+
+.no-column {
+
+    width: 20% !important;
+}
+
+.adminNoticeTitle {
+    margin: 5px 0 !important;
+    text-align: left !important;
+    font-size: 30px;
+    border-top: 1px solid;
+    padding: 37px 27px 30px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.adminNoticeText {
+    text-align: start !important;
+    height: 400px !important;
+}
+
+.adminNoticeDate {
+    float: right;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.adminNoticeView {
+    float: left !important;
+    font-size: 16px;
+    margin-right: 25px;
+    margin-top: 0px;
+
+}
+
+.noticeH1 {
+    font-size: 34px;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.adminNoticeBtn {
+    border-color: #e1ebfb !important;
+    background-color: #e1ebfb !important;
+    font-weight: bold !important;
+}
+
+/* 관리자 공지사항 모바일 */
+.adminNoticeMH1 {
+    margin: 30px !important;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title-column {
+    width: 150px !important;
+    background-color: white !important;
+}
+
+.date-column {
+    width: 200px !important;
+    background-color: white !important;
+}
+
+.view-column {
+    background-color: white !important;
+}
+
+/* 관리자 문의사항 페이지 */
+.adminInquiryH1 {
+    /*background-image: url("./images/abstract.jpg");*/
+    /*background-color: rgba(74, 0, 161, 0.33) gra;*/
+    background: linear-gradient(90deg, rgba(52, 32, 70, 0.40) 23%, rgba(126, 210, 214, 0.40) 100%, rgba(52, 32, 70, 0.59) 23%);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    font-size: 50px;
+}
+
+/* 관리자 문의목록 모바일 */
+.adminInquiryMH1 {
+    margin: 50px !important;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.adminInquiryContainer {
+    height: 400px;
+    margin-left: 0;
+}
+
+.inquiryTitle {
+    background-color: white !important;
+    font-size: 16px;
+    width: 20% !important;
+}
+
+.adminInquiryContainer .adminInquiryTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px 0 !important;
+    text-align: left !important;
+    font-size: 30px;
+    border-top: 1px solid;
+    padding: 37px 27px 30px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.inquiryAnswer {
+
+    background-color: white !important;
+    width: 40% !important;
+
+}
+
+.inquiryDate {
+
+    background-color: white !important;
+    width: 40% !important;
+}
+
+.adminInquiryDate, .adminInquiryPhone, .adminInquiryEmail {
+    margin-right: 10px;
+}

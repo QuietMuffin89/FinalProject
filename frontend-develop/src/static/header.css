@@ -1,0 +1,229 @@
+/* header CSS */
+/* header */
+
+body.noScroll {
+    overflow: hidden;
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    background-color: rgba(25, 25, 25, 0.56); /* Semi-transparent black */
+    z-index: 50; /* Ensure the shadow is just below the header */
+}
+
+
+
+
+.header a {
+    text-decoration: none;
+    color: #424242 !important;
+}
+
+.header {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/*.header.scrolled {*/
+/*    background: transparent;*/
+/*    border-bottom: 1px solid rgb(135, 135, 135, 0.2);*/
+/*}*/
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.header li a {
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    border-top: 1px solid rgb(135, 135, 135, 0.2);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: rgba(214, 214, 214, 0.58);
+    transition: 0.3s;
+
+}
+
+.header li a:not(:hover),
+.header .menu-btn:not(:hover) {
+    transition: 0.4s;
+
+}
+
+
+.header .logo {
+    display: contents;
+    float: left;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.headerImg {
+    max-height: 40px;
+    margin: 20px;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    border: none;
+
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 80px;
+    margin: 0 20px 0 20px;
+    position: relative;
+    user-select: none;
+
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 800px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+.logoutBtn .svgIcon {
+    display: none;
+}
+.logoutBtn .logout {
+    display: block;
+}
+
+
+
+
+/* 48em = 768px */
+
+/* 최소 넓이가 768ox 이하일 때  */
+@media (min-width: 876px) {
+    .header.scrolled {
+        /*background: transparent;*/
+        /*border-bottom: 1px solid rgb(135, 135, 135, 0.5);*/
+        display: none;
+
+
+    }
+
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 25px;
+        border-left: 1px solid rgb(135, 135, 135, 0.2);
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .logoutBtn .svgIcon {
+        display: flex;
+    }
+    .logoutBtn .logout {
+        display: none;
+    }
+
+
+
+
+
+}
+
+/*.adminName {*/
+/*    color: #171717;*/
+/*    margin-top: 10px;*/
+/*    padding: 10px 10px 10px 10px;*/
+/*    font-size: 20px;*/
+/*}*/
